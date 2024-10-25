@@ -1,0 +1,75 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Project Showcase */
+.project {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact p, #contact a {
+    font-size: 18px;
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+    .project {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .project img {
+        width: 50%;
+    }
+}
